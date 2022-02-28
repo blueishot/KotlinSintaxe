@@ -64,4 +64,36 @@ fun main() {
     println("Olá " + usuario + ", Sua idade é " + usuarioIdade)
     println("Olá $usuario, sua idade é $usuarioIdade")
     println("Sua idade ano que vem é de ${usuarioIdade + 1}")
+
+    val clothes = "To"
+    if (clothes.length < 3) {
+        println("Essa roupa tem menos de 3 letras")
+    } else {
+        println("Essa roupa tem mais de 3 letras")
+    }
+
+    val preco = 90_000
+    if (preco > 30_000) {
+        println("Você ganhou 40% de desconto")
+    } else if (preco > 20_000) {
+        println("Você ganhou 30% de desconto")
+    } else if (preco > 15_000) {
+        println("Você ganhou 20% de desconto")
+    } else {
+        println("Você não merece desconto")
+    }
+
+    val condition1 = "Teste"
+    val condition2 = 10
+
+    if (condition1 == "Teste" && condition2 == 11) {
+        println("Você inseriu tudo corretamente")
+    } else {
+        println("Você inseriu algo errado")
+    }
+
+    val caractere:String? = "Lunático"
+
+    val qtdDeCaracteres = caractere?.length ?: 0
+    println(qtdDeCaracteres)
 }
