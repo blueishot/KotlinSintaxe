@@ -96,4 +96,49 @@ fun main() {
 
     val qtdDeCaracteres = caractere?.length ?: 0
     println(qtdDeCaracteres)
+
+    // Aula 3
+
+    newFunction()
+
+    val somaResposta = somar()
+
+    println(somaResposta)
+
+    unitTest()
+
+    doubleFunction()
+
+    verificarIdade(age =  19)
+}
+
+fun newFunction () {
+    println("Olá eu sou uma função nova")
+}
+
+fun somar(): Int {
+    return 2+3
+}
+
+fun unitTest(): Unit {
+    var issoEUmaSubtracao = 3 - 1
+        println("Isso é uma subtração entre 3 - 1 = $issoEUmaSubtracao")
+}
+
+fun doubleFunction() {
+    println("Isso aqui é um teste")
+
+    fun doubleFunctionWorks() {
+        println("Parece que sim")
+    }
+
+    doubleFunctionWorks()
+}
+
+fun verificarIdade (age: Int) {
+    if (age > 18) {
+        println("Você pode ser preso =)")
+    } else {
+        println("Sortudo!!")
+    }
 }
